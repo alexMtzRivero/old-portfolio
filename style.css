@@ -1,0 +1,53 @@
+
+/* DOM el objeto de html renderizado*/
+
+
+
+/*
+a todos los bodys
+*/
+body{
+ background: #a4a4b0;
+}
+/*. crea un estilo sobreuna class  */
+.miNombre{
+	color: yellow;
+}
+
+/* crea un estilo sobre un ID
+primero agarra el ID despues la class */
+#miId{
+
+}
+.header{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+.flex-container{
+
+	content: "";
+		display: flex;
+		text-align: center;
+		align-content: center;
+}
+.center-text{
+	text-align: center;
+}
+.card-img{
+   margin: 0 1em;
+	width: 20%;
+}
+.content{
+	background:#afafaf;
+	width: 60%;
+}
+
+.card{
+	margin: 1em;
+	padding: 1em;
+	background:#afafaf;
+   border-radius: 1em;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1); 
+   display: flex;
+}
