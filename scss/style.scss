@@ -1,6 +1,11 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
-
+$text-hard: #302D20;
+$text-light: #a7de37;
+$color1:#5AEB87;
+$color2:#4EF532;
+$color3:#F5EC62;
+$color4:#EBDA9B;
 /* DOM el objeto de html renderizado*/
 
 
@@ -9,11 +14,10 @@ $primary-color: #333;
 a todos los bodys
 */
 body{
- background: #a4a4b0;
 }
 /*. crea un estilo sobreuna class  */
 .miNombre{
-	color: yellow;
+	color: $text-hard;
 }
 
 /* crea un estilo sobre un ID
@@ -21,14 +25,36 @@ primero agarra el ID despues la class */
 #miId{
 
 }
+.section{
+  margin: 1em;
+	padding: 1em;
+	background:#FFFFFF;
+   border-radius: 0em;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+   display: block;
+   width: 200px;
+
+
+}
+.line-block{
+  display: inline;
+
+
+}
+.sideways{
+  margin: 1em;
+	padding: 1em;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
 .header{
 	display: block;
 	margin: 0 auto;
 	text-align: center;
 }
 .flex-container{
-
-	content: "";
+  content: "";
 		display: flex;
 		text-align: center;
 		align-content: center;
@@ -36,19 +62,20 @@ primero agarra el ID despues la class */
 .center-text{
 	text-align: center;
 }
+
 .card-img{
    margin: 0 1em;
 	width: 20%;
 }
 .content{
-	background:#afafaf;
+	background:$text-light;
 	width: 60%;
 }
 
 .card{
 	margin: 1em;
 	padding: 1em;
-	background:#afafaf;
+	background:$text-light;
    border-radius: 1em;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
    display: flex;

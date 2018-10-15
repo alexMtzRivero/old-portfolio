@@ -2,34 +2,25 @@
 /*
 a todos los bodys
 */
+body {
+  background: #000000;
+}
+
 /*. crea un estilo sobreuna class  */
 .miNombre {
   color: #302D20;
 }
+.section{
+  margin: 1em;
+	padding: 1em;
+	background:#FFFFFF;
+   border-radius: 0em;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+}
 
 /* crea un estilo sobre un ID
 primero agarra el ID despues la class */
-.section {
-  margin: 1em;
-  padding: 1em;
-  background: #FFFFFF;
-  border-radius: 0em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  display: block;
-  width: 200px;
-}
-
-.line-block {
-  display: inline;
-}
-
-.sideways {
-  margin: 1em;
-  padding: 1em;
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
 .header {
   display: block;
   margin: 0 auto;
