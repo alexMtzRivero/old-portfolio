@@ -1,0 +1,108 @@
+/* DOM el objeto de html renderizado*/
+/*
+terminos vistos en clase
+  git
+  npm
+  sass pre poseseur css
+
+
+
+  css
+  repository
+  branche
+
+*/
+/*
+a todos los bodys
+*/
+body {
+  background: #000000;
+  transition: background 1s;
+  color: #ffffff;
+}
+
+h1:hover {
+  animation: 3s multicolor;
+  color: #fff;
+}
+
+@keyframes multicolor {
+  0% {
+    color: #000;
+  }
+  33% {
+    color: #FF0000;
+  }
+  66% {
+    color: #0000FF;
+  }
+  100% {
+    color: #FFF;
+  }
+}
+/*. crea un estilo sobreuna class  */
+.miNombre {
+  color: #302D20;
+}
+
+/* crea un estilo sobre un ID
+primero agarra el ID despues la class */
+.section {
+  margin: 1em;
+  padding: 1em;
+  background: #FFFFFF;
+  border-radius: 0em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 400px;
+  color: #000000;
+}
+
+.line-block {
+  display: inline;
+}
+
+.sideways {
+  margin: 1em;
+  padding: 1em;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-container {
+  content: "";
+  display: flex;
+  text-align: center;
+  align-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.card-img {
+  margin: 0 1em;
+  width: 20%;
+}
+
+.content {
+  background: #a7de37;
+  width: 60%;
+}
+
+.card {
+  margin: 1em;
+  padding: 1em;
+  background: #a7de37;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+/*# sourceMappingURL=darkStyle.css.map */

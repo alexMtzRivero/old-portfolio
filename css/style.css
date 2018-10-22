@@ -1,7 +1,27 @@
 /* DOM el objeto de html renderizado*/
 /*
+terminos vistos en clase
+  git
+  npm
+  sass pre poseseur css
+
+
+
+  css
+  repository
+  branche
+
+*/
+/*
 a todos los bodys
 */
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(45deg, #7156F5, #FFC4AA);
+  transition: background-image 1s, color 1s;
+  color: #000000;
+}
+
 /*. crea un estilo sobreuna class  */
 .miNombre {
   color: #302D20;
@@ -9,6 +29,26 @@ a todos los bodys
 
 /* crea un estilo sobre un ID
 primero agarra el ID despues la class */
+.bigCard {
+  margin: 1em;
+  padding: 0em;
+  background: #ffffff;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.profDetails {
+  text-align: center;
+  padding: 1em;
+  background-image: linear-gradient(0deg, #FF6060, #E9AC5B);
+  border-radius: 2em 2em 0em 0em;
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section {
   margin: 1em;
   padding: 1em;
@@ -16,11 +56,18 @@ primero agarra el ID despues la class */
   border-radius: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   display: block;
-  width: 200px;
+  width: 400px;
+  color: "#000000";
 }
 
-.line-block {
-  display: inline;
+.profImg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: block;
+  margin: 1em;
 }
 
 .sideways {
@@ -45,6 +92,11 @@ primero agarra el ID despues la class */
 
 .center-text {
   text-align: center;
+}
+
+.appImg {
+  width: 288px;
+  height: auto;
 }
 
 .card-img {
