@@ -28,11 +28,12 @@ $('document').ready(function () {
   var request = new XMLHttpRequest();
 
   // Open a new connection, using the GET request on the URL endpoint
-  request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Grenoble,fr&appid=7e604a1c1607d5b516348ed932971d94', true);
+  request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Grenoble,fr&appid=7e604a1c1607d5b516348ed932971d94&lang=fr', true);
  request.send();
   request.onload = function () {
         var data = JSON.parse(this.response);
         if (request.status >= 200 && request.status < 400) {
+          $('#weather').text("Le climat à Grenoble est actuellement: '"+data.weather[0].description+"'");
           console.log(data);
         } else {
           console.log('error');
