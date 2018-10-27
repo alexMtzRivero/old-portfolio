@@ -1,15 +1,18 @@
-$font-stack:    Helvetica, sans-serif;
+$font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $text-hard: #302D20;
 $text-light: #a7de37;
 
 $topBackgroundColor: #FFC4AA;
 $bottomBackgroudColor :#7156F5;
-$bottomProfColor:#FF6060;
+
+$bottomProfColor: #FF6060;
 $topProfColor: #E9AC5B;
-$bigCardBackground : #ffffff;
-$text-color : #000000;
-$cad-text : #ffffff;
+
+$bigCardBackground : #f1f1f1; // other color 1f1f1f;
+$text-color : #2f2f2f; //ligt color f2f2f2
+$cad-text : #000000;
+
 /* DOM el objeto de html renderizado*/
 /*
 terminos vistos en clase
@@ -24,108 +27,186 @@ terminos vistos en clase
   branche
 
 */
-
-
 /*
 a todos los bodys
 */
-body{
+/* menor a 400
+cambiar tamañp de h1, imagenes  margeners de section y sideways
+*/
+
+
+
+body {
   font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(45deg,$bottomBackgroudColor, $topBackgroundColor);
-  transition: background-image 1s,color 1s;
+  background-image: linear-gradient(45deg, $bottomBackgroudColor, $topBackgroundColor);
+  transition: background 1s, color 1s;
   color: $text-color;
+
+}
+hr{
+  margin: 0 2em;
+opacity: .50;
 }
 
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+  color: $bottomProfColor;
+  text-align: center;
+}
 
 /*. crea un estilo sobreuna class  */
-.miNombre{
-	color: $text-hard;
+.miNombre {
+  color: $text-hard;
 }
 
 /* crea un estilo sobre un ID
 primero agarra el ID despues la class */
-#miId{
+#miId {}
 
-}
-.bigCard{
+.bigCard {
   margin: 1em;
-	padding: 0em;
-	background:$bigCardBackground;
-   border-radius: 2em;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-   display: block;
-
+  padding: 0em;
+  background: $bigCardBackground;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: block;
 }
-.profDetails{
+
+.langImg {
+  width: 100px;
+  height: auto;
+  margin: auto;
+}
+
+.profDetails {
   text-align: center;
   padding: 1em;
-  background-image: linear-gradient(0deg,$bottomProfColor, $topProfColor);
+  background-image: linear-gradient(0deg, $bottomProfColor, $topProfColor);
   border-radius: 2em 2em 0em 0em;
-  box-shadow:  0 7px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
   margin-left: auto;
-   margin-right: auto;
+  margin-right: auto;
+
+  h2 {
+    color: #ffffff;
+  }
 }
-.section{
+
+h3 {
+  color: $bottomBackgroudColor;
+}
+
+.section {
   margin: 1em;
-	padding: 1em;
-	background:#FFFFFF;
-   border-radius: 0em;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-   display: block;
-   width: 400px;
-
-color: "#000000";
-
+  padding: 1em;
+  display: block;
+  color: "#000000";
+  width: 400px;
 }
-.profImg{
+
+.profImg {
   margin-left: auto;
   margin-right: auto;
-  
 }
+
 .block {
-  display:block;
-  margin: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1em;
 }
-.sideways{
-  margin: 1em;
-	padding: 1em;
+
+.sideways {
+  padding: 1em;
   display: inline-flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center
 }
 
-.header{
-	display: block;
-	margin: 0 auto;
-	text-align: center;
+.miniCard {
+  display: inline-grid;
+  text-align: center;
+  font-size: 40px;
+  color: $text-color;
+  margin: 1em;
 }
-.flex-container{
-  content: "";
-		display: flex;
-		text-align: center;
-		align-content: center;
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-.center-text{
-	text-align: center;
+
+.header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
-.appImg{
+
+.appImg {
   width: 288px;
   height: auto;
-}
-.card-img{
-   margin: 0 1em;
-	width: 20%;
-}
-.content{
-	background:$text-light;
-	width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.card{
-	margin: 1em;
-	padding: 1em;
-	background:$text-light;
-   border-radius: 1em;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-   display: flex;
+.card {
+  margin: 1em;
+  padding: 1em;
+  background: $text-light;
+  border-radius: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+@media screen and (min-width:1200px) {
+  .section {
+    margin: .25em 0;
+    padding: 0 1em;
+    display: grid;
+    width: 350px;
+  }
+  .sideways{
+   width: -webkit-fill-available;
+    .sideways{
+      width: auto;
+    }
+  }
+}
+@media screen and(max-width: 520px) {
+  .section {
+    margin: .25em 0;
+    padding: 0 1em;
+    display: grid;
+    width: auto;
+  }
+  h2{
+    font-size: 1.75em;
+  }
+  .appImg{
+    width: 200px;
+  }
+  .langImg{
+    width: 100px;
+  }
+  .miniCard{
+    font-size: 1.75em
+  }
+  .sideways{
+    padding: 10px;
+  }
+  .sideways {
+    padding: 10px;
+    width: -webkit-fill-available;
+  }
+    #bonjour{
+      font-size: 1em;
+    }
+    body{
+      align-items: center;
+    justify-content: center;
+    }
+
 }

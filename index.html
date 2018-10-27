@@ -5,26 +5,43 @@
     *bonjour o bonsoir selon le mode nuit
     *que cambie de dia a noche con transicion de varios colores
     *segun la hora real se activa sierto modo
+
+
+    Fichier README 1 point
+    Site en ligne 2 points
+    CODE HTML Valide 2 points
+    Propreté du code (indentation , sémantique) 2 points
+    *Commits GIT 3 points
+    *Utilisation de SASS pour générer votre CSS : 2 points
+    *Site responsive 2 points
+    *  Fonctionnement du mode Jour / Nuit + Météo : 4 points
+    Installation d’une librairie complémentaire fonctionnelle via npm : 2 points
+
+
+
+
     * -->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>hello friends</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link id="cssStyle" rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hello friends</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link id="cssStyle"  rel="stylesheet" type="text/css" href="css/style.css">
 
 
-    </head>
-  <body>
+</head>
+
+<body>
 
 
 
-<button type="button"  onclick="chngStyle()"name="button">normal</button>
+  <button type="button" onclick="chngStyle()" name="button">normal</button>
 
 
-    <!--
+  <!--
 	   <div class="header">
 	  		<div class="flex-container" >
 	  			<div class="">
@@ -53,74 +70,92 @@
 
 -->
 
-	</div>
+  </div>
   <div class="bigCard">
 
-      <div class="profDetails">
-        <div class="sideways">
-          <img src="imgs/Unknown.png" class="profImg">
-          <div class="block">
-            <h1>Alejandro Martinez Rivero</h1>
-            <h2>TSU en Technologie de l'information</h2>
-            <p>
-                  Programmeur junior avec plus de 4 ans d'expérience dans le développement de software.
-            </p>
-            <div>
-                  alejandro.martinez.0598@gmail.com
-                  7 69 67 53 22
-                  11 Rue Martin Gignoux, Grenoble 38000
-                  25 Mai, 1998
-            </div>
+    <div class="profDetails">
+      <div class="sideways">
+        <img src="imgs/Unknown.png" class="profImg">
+        <div class="block">
+          <h1>Alejandro Martinez Rivero</h1>
+          <h2>TSU en Technologie de l'information</h2>
+          <p>
+            Programmeur junior avec plus de 4 ans d'expérience dans le développement de software.
+          </p>
+          <div>
+            alejandro.martinez.0598@gmail.com
+            7 69 67 53 22
+            11 Rue Martin Gignoux, Grenoble 38000
+            25 Mai, 1998
           </div>
         </div>
-
       </div>
-      <h1 id="bonjour">Bonjour</h1>
-      <h2 id="weather"></h2>
 
+    </div>
+    <h1 id="bonjour" class="center">Bonjour</h1>
+    <h2 id="weather"></h2>
+
+<hr>
+    <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
     <div class="sideways">
 
-    <div class="section">
-          <h2>EXPÉRIENCE PROFESSIONNELLE</h2>
-          <h3>Entraineur</h3>
-          <p>Olympiade mexicaine de l'informatique</p>
-          <div class="">
-            08/2017 – 04/2018
-          </div>
-          <div class="">
-            Mexique
-          </div>
-          <h3>Tâches</h3>
+      <div class="section">
+        <h3>Entraineur</h3>
+        <h3>Olympiade mexicaine de l'informatique</h3>
+        <div class="">
+          08/2017 – 04/2018
+        </div>
+        <div class="">
+          Mexique
+        </div>
+        <h3>Tâches</h3>
         <p>Apprendre la programmation structurée aux étudiants du lycée a ﬁn de calculer une solution à des problèmes mathématiques complexes
-         </p>
-         <h3> Développeur</h3>
-          <h3>Naby</h3>
+        </p>
+        <div class="">
+          technologies:
+          C++
+        </div>
+      </div>
+
+
+      <div class="section">
+        <h3> Développeur</h3>
+        <h3>Naby</h3>
         <div class="">
           01/2018 – 06/2018
           Mexique
-        </div>  <p>application mobile pour embaucher des nounous</p>
-          <h3>Tâches</h3>
-          <p>Programmeur front et backend de l'application mobile pour Android</p>
-          <div class="">
-            technologies:
-            Java–Firebase
-          </div>
-          <h3>Développeur</h3>
-          <h3>posfm (Point de vente)</h3>
-        <div class="">
-            06/2017 – 11/2017
-            Mexique
         </div>
-          <p>Site de point de vente pour petites entreprises</p>
-          <h3>Tâches</h3>
-          <p>optimiser les processus de consommation de données</p>
+        <p>application mobile pour embaucher des nounous</p>
+        <h3>Tâches</h3>
+        <p>Programmeur front et backend de l'application mobile pour Android</p>
         <div class="">
-            technologies:
-            PHP,JavaScript –MySql
+          technologies:
+          Java–Firebase
         </div>
+      </div>
+
+      <div class="section">
+        <h3>Développeur</h3>
+        <h3>posfm (Point de vente)</h3>
+        <div class="">
+          06/2017 – 11/2017
+          Mexique
+        </div>
+        <p>Site de point de vente pour petites entreprises</p>
+        <h3>Tâches</h3>
+        <p>optimiser les processus de consommation de données</p>
+        <div class="">
+          technologies:
+          PHP,JavaScript –MySql
+        </div>
+      </div>
+
     </div>
-    <div class="section">
-        <h2>EDUCATION</h2>
+    <hr>
+    <h2>EDUCATION</h2>
+    <div class="sideways">
+
+      <div class="section">
         <h3>LP - Systèmes Mobiles et Interface Nomade</h3>
         <div class="">
           Université Grenoble Alpes
@@ -131,6 +166,8 @@
         <div class="">
           France
         </div>
+      </div>
+      <div class="section">
         <h3>TSU en technologies de l'information et de la communication</h3>
         <div class="">
           Université technologique au Chihuahua
@@ -142,70 +179,107 @@
           Mexique
         </div>
 
-    </div>
-    <div class="line-block">
-      <div class="section">
+      </div>
 
-              <h2>COMPÉTENCES</h2>
-            <lu>
-            <li>Anglais</li>
-            <li>Espagnol (langue maternelle)</li>
-            <li>Git</li>
-            <li>Résolution de conflits</li>
-            <li>Travai en équipe</li>
-            <li>Proactif</li>
-            </lu>
+    </div>
+    <hr>
+    <h2>LANGAGES / TECHNOLOGIES</h2>
+    <div class="sideways ">
+      <div class="sideways">
+
+        <div class="miniCard">
+          <img src="imgs/java.png" class="langImg" alt="">
+
+        </div>
+
+        <div class="miniCard">
+          <img src="imgs/javaScript.png" class="langImg" alt="">
+          Javascript
+        </div>
+
+      </div>
+      <div class="sideways">
+
+        <div class="miniCard">
+          <img src="imgs/php.png" class="langImg" alt="">
+
+        </div>
+
+        <div class="miniCard">
+          <img src="imgs/firebase_logo.png" class="langImg" alt="">
+          Firebase
+        </div>
+
+      </div>
+      <div class="miniCard">
+        <img src="imgs/sql.png" class="langImg" alt="">
+      </div>
+
+    </div>
+<hr>
+    <h2>PROJETS PERSONELS</h2>
+    <div class="sideways">
+
+      <div class="section">
+        <h3>Greedy finguer (jeu Android)(07/2016 – 02/2017)</h3>
+        <p>"greedy Finguer" tous les processus pour la création complète d'une application, programmation, level design, musique, art, publicité et aspects légaux impliqués dans la publication du jeu.</p>
+        <img src="imgs/greedyFinger.png" class="appImg" alt="">
 
       </div>
       <div class="section">
-                <h2>PROJETS PERSONELS</h2>
-                <h3>Greedy finguer (jeu Android)(07/2016 – 02/2017)</h3>
-                <p>"greedy Finguer" tous les processus pour la création complète d'une application, programmation, level design, musique, art, publicité et aspects légaux impliqués dans la publication du jeu.</p>
-                <img src="imgs/greedyFinger.png" class="appImg" alt="">
-                <h3>Tod (jeu Android)(05/2015 – 01/2016)</h3>
-                <p>Dans le développement de tod j'ai développé tous les processus pour la création complète d'une application, programmation, level design, musique, art, publicité et aspects légaux impliqués dans la publication du jeu
-                </p>
-                <h3>  Vitae (01/2015 – 05/2015)</h3>
-                <p>Programmeur front et backend de l'application mobile pour Android qui permet aux enfants handicapés de communiquer au moyen d'un clavier intelligent</p>
-                <img src="imgs/tod.jpg" class="appImg" alt="">
+        <h3>Tod (jeu Android)(05/2015 – 01/2016)</h3>
+        <p>Dans le développement de tod j'ai développé tous les processus pour la création complète d'une application, programmation, level design, musique, art, publicité et aspects légaux impliqués dans la publication du jeu
+        </p>
+        <img src="imgs/tod.jpg" class="appImg" alt="">
       </div>
-    </div>
-    <div class="line-block">
       <div class="section">
+        <h3> Vitae (01/2015 – 05/2015)</h3>
+        <p>Programmeur front et backend de l'application mobile pour Android qui permet aux enfants handicapés de communiquer au moyen d'un clavier intelligent</p>
+      </div>
+
+    </div>
+    <div class="sideways">
+      <div class="section">
+<hr>
+        <h2>COMPÉTENCES</h2>
+        <lu>
+          <li>Anglais</li>
+          <li>Espagnol (langue maternelle)</li>
+          <li>Git</li>
+          <li>Résolution de conflits</li>
+          <li>Travai en équipe</li>
+          <li>Proactif</li>
+        </lu>
+
+      </div>
+      <div class="section">
+
         <h2>RÉUSSITES</h2>
         <p>Médaille du bronze au niveau national à l’olympiade mexicaine de l'informatique en 2015</p>
         <p>Deux médailles d'argent au niveau de l'état à l'Olympiade informatique mexicaine en 2014 et 2015</p>
       </div>
-      <div class="section">
-          <h2>LANGAGES/TECHNOLOGIES</h2>
-         <lu>
-           <li>Java</li>
-           <li>Javascript</li>
-           <li>Php</li>
-           <li>Firebase</li>
-           <li>MySql</li>
-         </lu>
-      </div>
+
       <div class="section">
 
-          <h2>INTÉRÊTS</h2>
-          <lu>
-        <li>Conception de jeu</li>
-        <li>Course à pied</li>
-        <li>Réseaux neuronaux</li>
-        <li>Algorithmes génétiques</li>
-          </lu>
+        <h2>INTÉRÊTS</h2>
+        <lu>
+          <li>Conception de jeu</li>
+          <li>Course à pied</li>
+          <li>Réseaux neuronaux</li>
+          <li>Algorithmes génétiques</li>
+        </lu>
 
       </div>
 
     </div>
 
-    </div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<script src="scripts/script.js"></script>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="scripts/script.js"></script>
 
 
-  </body>
+</body>
+
 </html>
