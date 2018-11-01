@@ -21,13 +21,15 @@ reurn val !== "tu puta   regresa un arreglo con todos los valores que no sean tu
 
 */
 // main
+//import swal from 'sweetalert2/dist/sweetalert2.js'
 
 var coleurs = ["#7156F5", "#ff00ff", "#ff0000", "#FFC4AA"];
 var day = true;
 var bienvenue = $('#bonjour');
+var chngButton = $('#chngButton');
 var d = new Date();
 var climatText = "";
-var timeText = "ils sont "+d.getHours()+"H"+d.getMinutes();
+var timeText = "ils sont " + d.getHours() + "H" + d.getMinutes();
 $('document').ready(function() {
     var request = new XMLHttpRequest();
 
@@ -35,17 +37,46 @@ $('document').ready(function() {
     request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Grenoble,fr&appid=7e604a1c1607d5b516348ed932971d94&lang=fr', true);
     request.send();
     request.onload = function() {
+
       var data = JSON.parse(this.response);
       if (request.status >= 200 && request.status < 400) {
-        climatText +=" et le climat à Grenoble est actuellement: '" + data.weather[0].description + "'";
+        climatText += " et le climat à Grenoble est actuellement: '" + data.weather[0].description + "'";
       } else {
         console.log('error');
       }
-      if(d.getHours()<5 ||d.getHours()>20 )
+      if (d.getHours() < 5 || d.getHours() > 20)
         chngStyle();
     }
+
+    swal.mixin({
+      input: 'text',
+      confirmButtonText: 'Next &rarr;',
+      showCancelButton: true,
+      progressSteps: ['1', '2', '3']
+    }).queue([{
+        title: 'Question 1',
+        text: 'Chaining swal2 modals is easy'
+      },
+      'Question 2',
+      'Question 3'
+    ]).then((result) => {
+      if (result.value) {
+        swal({
+          title: 'All done!',
+          html: 'Your answers: <pre><code>' +
+            JSON.stringify(result.value) +
+            '</code></pre>',
+          confirmButtonText: 'Lovely!'
+        })
+      }
+    })
+
+
+
     chngStyle();
-    
+
+
+
 
 
 
@@ -55,12 +86,14 @@ $('document').ready(function() {
 
 function chngStyle() {
   if (day) {
-    bienvenue.text("Bonjour "+timeText+climatText);
+    bienvenue.text("Bonjour " + timeText + climatText);
+    chngButton.text('mode nuit');
     chngColor(day, 0);
     $("#cssStyle").prop("href", "./css/style.css")
     console.log("" + coleurs[0]);
   } else {
-    bienvenue.text("Bonsoir " +timeText+climatText);
+    bienvenue.text("Bonsoir " + timeText + climatText);
+    chngButton.text('mode jour');
     chngColor(day, coleurs.length - 1);
     $("#cssStyle").prop("href", "./css/darkStyle.css")
     console.log("" + coleurs[coleurs.length - 1]);
