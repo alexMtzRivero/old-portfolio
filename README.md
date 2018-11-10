@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
- To install sweetalert2 with this instructions you will need [NPM](https://www.npmjs.com)
+ To install sweetalert2  and Sass with this instructions you will need [NPM](https://www.npmjs.com)
 
 
 
@@ -48,9 +48,9 @@ something super different like #ff0000 to see the changes working
 
 ## Built With
 
-* [NPM](https://www.npmjs.com) - The web framework used
-* [sweetalert2](https://sweetalert2.github.io) - Dependency Management
-* [SASS](https://sass-lang.com) - Used to generate RSS Feeds
+* [NPM](https://www.npmjs.com)
+* [Sweet alert 2](https://sweetalert2.github.io)
+* [SASS](https://sass-lang.com) 
 
 
 
