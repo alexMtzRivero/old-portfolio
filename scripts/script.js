@@ -56,7 +56,7 @@ $('document').ready(function() {
       }
       getWeather();
     })
-
+getWeather();
 
 
     chngStyle();
@@ -77,8 +77,8 @@ function getWeather(){
 
     var data = JSON.parse(this.response);
     if (request.status >= 200 && request.status < 400) {
-      climatText += " et le climat à "+city+" est actuellement: '" + data.weather[0].description + "'";
-          bienvenue.text("Bonjour " + timeText + climatText);
+      climatText = " et le climat à "+city+" est actuellement: '" + data.weather[0].description + "'";
+      bienvenue.text("Bonjour " + timeText + climatText);
     } else {
       console.log('error');
     }
