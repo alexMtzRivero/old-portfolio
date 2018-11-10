@@ -4,49 +4,35 @@ $text-hard: #302D20;
 $text-light: #a7de37;
 
 //change to true if you want to compile the darkStyle
-$isDark : true;
+$isDark : false;
 
 
-// change this variable to edit the light style
+// change this variables to edit the light style
 $topBackgroundColor: #FFC4AA;
 $bottomBackgroudColor: #7156F5;
 $bottomProfColor: #FF6060;
 $topProfColor: #E9AC5B;
-$bigCardBackground: #f1f1f1; // other color 1f1f1f;
-$text-color: #2f2f2f; //ligt color f2f2f2
+$bigCardBackground: #f1f1f1; 
+$text-color: #2f2f2f;
 $cad-text: #000000;
 
-// change this variable to edit the dark style
+// change this variables to edit the dark style
 @if $isDark{
   $topBackgroundColor: #7156F5;
   $bottomBackgroudColor: #FFC4AA;
   $bottomProfColor: #E9AC5B;
   $topProfColor: #FF6060;
-  $bigCardBackground: #1f1f1f; // other color 1f1f1f;
-  $text-color: #f2f2f2; //ligt color f2f2f2
+  $bigCardBackground: #1f1f1f;
+  $text-color: #f2f2f2;
   $cad-text: #000000;
 }
 
 
-/*
-terminos vistos en clase
-  git
-  npm
-  sass pre poseseur css
 
-
-
-  css
-  repository
-  branche
-
-*/
 /*
 a todos los bodys
 */
-/* menor a 400
-cambiar tamañp de h1, imagenes  margeners de section y sideways
-*/
+
 body {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(45deg, $bottomBackgroudColor, $topBackgroundColor);

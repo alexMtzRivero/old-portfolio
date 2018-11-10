@@ -2,9 +2,9 @@
 
 this is a project to get into the bases of javascript,Html5,css
 in this document you can find
-* An example of an HttpRequest for getting the clima of  Grenoble, France.
+* An example of an HttpRequest for getting the weather of  Grenoble, France.
 * the usage of media queries to make the site responsive.
-* The implementantion of Sass for fatster css design.
+* The implementantion of Sass for faster css design.
 * One extra library (Sweet alert2) to show the usage of npm.
 
 
@@ -16,35 +16,44 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
- to install sweetalert2 with this instructions you will need [NPM](https://www.npmjs.com)
+ To install sweetalert2 with this instructions you will need [NPM](https://www.npmjs.com)
 
 
 
 ### Installing
  clone the repository
- then in the project directory write the next command in the command prompt
+ then in the project directory write the next command in the command prompt.
 ```
 npm install
 ```
-End with an example of getting some data out of the system or using it for a little demo
-
+ now you are ready
 
 ### And coding style tests
 
-Explain what these tests test and why
+To check if everything its allright
+In in the project directory run this command.
+```
+ sass --watch scss/style.scss css/style.css
+```
+or
+```
+ sass --watch scss/style.scss css/darkStyle.css
+```
+to comile the night mode.
 
-```
-Give an example
-```
+you can change maybe the $text-color variable in the style.scss file to
+something super different like #ff0000 to see the changes working
+
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [NPM](https://www.npmjs.com) - The web framework used
+* [sweetalert2](https://sweetalert2.github.io) - Dependency Management
+* [SASS](https://sass-lang.com) - Used to generate RSS Feeds
 
 
 
 ## Authors
 
-* **Alejandro Martinez** - *Initial work* -[My git](https://gitlab.com/alejandro.martinez.0598/)
+* **Alejandro Martinez** -[My git](https://gitlab.com/alejandro.martinez.0598/)

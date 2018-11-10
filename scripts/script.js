@@ -25,50 +25,36 @@ reurn val !== "tu puta   regresa un arreglo con todos los valores que no sean tu
 
 var coleurs = ["#7156F5", "#ff00ff", "#ff0000", "#FFC4AA"];
 var day = true;
+var city = "Grenoble";
+var country = "fr";
 var bienvenue = $('#bonjour');
 var chngButton = $('#chngButton');
 var d = new Date();
 var climatText = "";
 var timeText = "ils sont " + d.getHours() + "H" + d.getMinutes();
 $('document').ready(function() {
-    var request = new XMLHttpRequest();
-
-    // Open a new connection, using the GET request on the URL endpoint
-    request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=Grenoble,fr&appid=7e604a1c1607d5b516348ed932971d94&lang=fr', true);
-    request.send();
-    request.onload = function() {
-
-      var data = JSON.parse(this.response);
-      if (request.status >= 200 && request.status < 400) {
-        climatText += " et le climat à Grenoble est actuellement: '" + data.weather[0].description + "'";
-      } else {
-        console.log('error');
-      }
-      if (d.getHours() < 5 || d.getHours() > 20)
-        chngStyle();
-    }
 
     swal.mixin({
       input: 'text',
       confirmButtonText: 'Next &rarr;',
       showCancelButton: true,
-      progressSteps: ['1', '2', '3']
+      progressSteps: ['1', '2']
     }).queue([{
-        title: 'Question 1',
-        text: 'Chaining swal2 modals is easy'
+        title: 'quel est ton pays?',
+        text: 'On va te montrer le climat'
       },
-      'Question 2',
-      'Question 3'
+      'quel est ton etat?'
     ]).then((result) => {
       if (result.value) {
         swal({
-          title: 'All done!',
-          html: 'Your answers: <pre><code>' +
-            JSON.stringify(result.value) +
-            '</code></pre>',
-          confirmButtonText: 'Lovely!'
+          title: 'Parfait!'
         })
+        country = result.value[0];
+        city = result.value[1];
+        console.log(country,city);
+
       }
+      getWeather();
     })
 
 
@@ -76,13 +62,30 @@ $('document').ready(function() {
     chngStyle();
 
 
-
-
-
-
   }
   // Create a request variable and assign a new XMLHttpRequest object to it.
 );
+
+
+function getWeather(){
+  var request = new XMLHttpRequest();
+
+  // Open a new connection, using the GET request on the URL endpoint
+  request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q='+city+','+country+'&appid=7e604a1c1607d5b516348ed932971d94&lang=fr', true);
+  request.send();
+  request.onload = function() {
+
+    var data = JSON.parse(this.response);
+    if (request.status >= 200 && request.status < 400) {
+      climatText += " et le climat à "+city+" est actuellement: '" + data.weather[0].description + "'";
+          bienvenue.text("Bonjour " + timeText + climatText);
+    } else {
+      console.log('error');
+    }
+    if (d.getHours() < 5 || d.getHours() > 19)
+      chngStyle();
+  }
+}
 
 function chngStyle() {
   if (day) {
