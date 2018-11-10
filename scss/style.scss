@@ -2,13 +2,32 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 $text-hard: #302D20;
 $text-light: #a7de37;
+
+//change to true if you want to compile the darkStyle
+$isDark : true;
+
+
+// change this variable to edit the light style
 $topBackgroundColor: #FFC4AA;
 $bottomBackgroudColor: #7156F5;
 $bottomProfColor: #FF6060;
 $topProfColor: #E9AC5B;
 $bigCardBackground: #f1f1f1; // other color 1f1f1f;
 $text-color: #2f2f2f; //ligt color f2f2f2
-$cad-text: #000000; /* DOM el objeto de html renderizado*/
+$cad-text: #000000;
+
+// change this variable to edit the dark style
+@if $isDark{
+  $topBackgroundColor: #7156F5;
+  $bottomBackgroudColor: #FFC4AA;
+  $bottomProfColor: #E9AC5B;
+  $topProfColor: #FF6060;
+  $bigCardBackground: #1f1f1f; // other color 1f1f1f;
+  $text-color: #f2f2f2; //ligt color f2f2f2
+  $cad-text: #000000;
+}
+
+
 /*
 terminos vistos en clase
   git
@@ -56,7 +75,7 @@ primero agarra el ID despues la class */
 
 #miId {}
 
-button{
+.myButton{
   background: #5555F3;
     color: white;
     border: 0;
@@ -113,6 +132,8 @@ h3 {
 .profImg {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+  width: 12em ;
 }
 
 .block {

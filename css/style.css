@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* DOM el objeto de html renderizado*/
 /*
 terminos vistos en clase
   git
@@ -45,9 +44,21 @@ h2 {
 
 /* crea un estilo sobre un ID
 primero agarra el ID despues la class */
+.myButton {
+  background: #5555F3;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  width: 7.5em;
+  height: 2em;
+  margin-top: 1em;
+  margin-left: 2em;
+  position: absolute;
+}
+
 .bigCard {
   margin: 1em;
-  padding: 0em;
+  padding: 0;
   background: #f1f1f1;
   border-radius: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -64,7 +75,7 @@ primero agarra el ID despues la class */
   text-align: center;
   padding: 1em;
   background-image: linear-gradient(0deg, #FF6060, #E9AC5B);
-  border-radius: 2em 2em 0em 0em;
+  border-radius: 2em 2em 0 0;
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.1);
   color: #ffffff;
   margin-left: auto;
@@ -89,6 +100,8 @@ h3 {
 .profImg {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+  width: 12em;
 }
 
 .block {
