@@ -1,0 +1,98 @@
+Alejandro Martinez Rivero
+TSU en Technologie de l'information
+Programmeur junior avec plus de 4 ans d'expérience dans le développement de software.
+alejandro.martinez.0598@gmail.com
+7 69 67 53 22
+11 Rue Martin Gignoux, Grenoble 38000
+25 Mai, 1998
+EXPÉRIENCE PROFESSIONNELLE
+Developeur fullstack
+Inria
+07/01/2019 --
+Title: Development of a simulator for IoT objects / devices in smart homes
+
+Objective: The goal of the internship is to develop a graphical environment for simulating connected devices and their usage in a smart home. 
+A smart home is a convenient home setup where appliances and devices can be automatically controlled remotely from internet connected devices like a mobile phone.
+ A smart home has its devices interconnected through the internet, and the user can control functions such as security access to the home, temperature, lighting and 
+home theatre.
+ The work involves, building an interface to specify a smart home, its connected devices and their interactions.
+
+vue.js
+node.js
+
+read a lot of papers
+
+
+
+Entraineur
+Olympiade mexicaine de l'informatique
+08/2017 – 04/2018
+Mexique
+Tâches
+Apprendre la programmation structurée aux étudiants du lycée a ?n de calculer une solution à des problèmes mathématiques complexes
+Développeur
+Naby
+01/2018 – 06/2018
+Mexique
+application mobile pour embaucher des nounous
+Tâches
+Programmeur front et backend de l'application mobile pour Android
+technologies:
+Java
+–
+Firebase
+Développeur
+posfm (Point de vente)
+06/2017 – 11/2017
+Mexique
+Site de point de vente pour petites entreprises
+Tâches
+optimiser les processus de consommation de données
+technologies:
+PHP,JavaScript
+–
+MySql
+
+
+
+
+
+EDUCATION
+LP - Systèmes Mobiles et Interface Nomade
+Université Grenoble Alpes
+09/2018 – Présent
+France
+TSU en technologies de l'information et de la communication
+Université technologique au Chihuahua
+07/2016 – 06/2018
+Mexique
+COMPÉTENCES
+
+Anglais
+Espagnol (langue maternelle)
+Git
+Résolution de conflits
+Travail en équipe
+Proactif
+
+PROJETS PERSONELS
+Greedy finguer (jeu Android) (07/2016 – 02/2017)
+"greedy Finguer" tous les processus pour la création complète d'une application, programmation, level design, musique, art, publicité et aspects légaux impliqués dans la publication du jeu.
+Tod (jeu Android) (05/2015 – 01/2016)
+Dans le développement de tod j'ai développé tous les processus pour la création complète d'une application, programmation, level design, musique, art, publicité et aspects légaux impliqués dans la publication du jeu
+Vitae (01/2015 – 05/2015)
+Programmeur front et backend de l'application mobile pour Android qui permet aux enfants handicapés de communiquer au moyen d'un clavier intelligent
+RÉUSSITES
+Médaille du bronze au niveau national à l’olympiade mexicaine de l'informatique en 2015
+Deux médailles d'argent au niveau de l'état à l'Olympiade informatique mexicaine en 2014 et 2015
+LANGAGES/TECHNOLOGIES
+Java
+Javascript
+Php
+Firebase
+MySql
+INTÉRÊTS
+Conception de jeu
+Course à pied
+Réseaux neuronaux
+Algorithmes génétiques
